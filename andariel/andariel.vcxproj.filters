@@ -128,4 +128,95 @@
       <UniqueIdentifier>{3ddd5c71-08af-40aa-ad4d-795a7b880a15}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>Source Files\00_global</Filter>
+    </ClCompile>
+    <ClCompile Include="data_type.cpp">
+      <Filter>Source Files\01_types\00_deklaracja_definicja</Filter>
+    </ClCompile>
+    <ClCompile Include="01_int.cpp">
+      <Filter>Source Files\01_types\01_fundamentalne\01_typy_calkowite</Filter>
+    </ClCompile>
+    <ClCompile Include="01_float.cpp">
+      <Filter>Source Files\01_types\01_fundamentalne\02_typy_zmiennoprzecinkowe</Filter>
+    </ClCompile>
+    <ClCompile Include="02_double.cpp">
+      <Filter>Source Files\01_types\01_fundamentalne\02_typy_zmiennoprzecinkowe</Filter>
+    </ClCompile>
+    <ClCompile Include="03_long_double.cpp">
+      <Filter>Source Files\01_types\01_fundamentalne\02_typy_zmiennoprzecinkowe</Filter>
+    </ClCompile>
+    <ClCompile Include="01_char.cpp">
+      <Filter>Source Files\01_types\01_fundamentalne\03_znaki_alfanumeryczne</Filter>
+    </ClCompile>
+    <ClCompile Include="01_bool.cpp">
+      <Filter>Source Files\01_types\01_fundamentalne\04_typ_logiczny</Filter>
+    </ClCompile>
+    <ClCompile Include="02_bool_check.cpp">
+      <Filter>Source Files\01_types\01_fundamentalne\04_typ_logiczny</Filter>
+    </ClCompile>
+    <ClCompile Include="03_george_bool.cpp">
+      <Filter>Source Files\01_types\01_fundamentalne\04_typ_logiczny</Filter>
+    </ClCompile>
+    <ClCompile Include="01_enum.cpp">
+      <Filter>Source Files\01_types\01_fundamentalne\01_typy_calkowite\01_typ_wyliczeniowy_enum</Filter>
+    </ClCompile>
+    <ClCompile Include="02_calculate.cpp">
+      <Filter>Source Files\01_types\01_fundamentalne\01_typy_calkowite\01_typ_wyliczeniowy_enum</Filter>
+    </ClCompile>
+    <ClCompile Include="03_enum_days.cpp">
+      <Filter>Source Files\01_types\01_fundamentalne\01_typy_calkowite\01_typ_wyliczeniowy_enum</Filter>
+    </ClCompile>
+    <ClCompile Include="04_enum_true_calculate.cpp">
+      <Filter>Source Files\01_types\01_fundamentalne\01_typy_calkowite\01_typ_wyliczeniowy_enum</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="global.h">
+      <Filter>Header Files\00_global</Filter>
+    </ClInclude>
+    <ClInclude Include="data_type.h">
+      <Filter>Header Files\01_types\00_deklaracja_definicja</Filter>
+    </ClInclude>
+    <ClInclude Include="01_int.h">
+      <Filter>Header Files\01_types\01_fundamentalne\01_typy_calkowite</Filter>
+    </ClInclude>
+    <ClInclude Include="01_float.h">
+      <Filter>Header Files\01_types\01_fundamentalne\02_typy_zmiennoprzecinkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="02_double.h">
+      <Filter>Header Files\01_types\01_fundamentalne\02_typy_zmiennoprzecinkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="03_long_double.h">
+      <Filter>Header Files\01_types\01_fundamentalne\02_typy_zmiennoprzecinkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="01_char.h">
+      <Filter>Header Files\01_types\01_fundamentalne\03_znaki_alfanumeryczne</Filter>
+    </ClInclude>
+    <ClInclude Include="01_bool.h">
+      <Filter>Header Files\01_types\01_fundamentalne\04_typ_logiczny</Filter>
+    </ClInclude>
+    <ClInclude Include="02_bool_check.h">
+      <Filter>Header Files\01_types\01_fundamentalne\04_typ_logiczny</Filter>
+    </ClInclude>
+    <ClInclude Include="03_george_bool.h">
+      <Filter>Header Files\01_types\01_fundamentalne\04_typ_logiczny</Filter>
+    </ClInclude>
+    <ClInclude Include="01_enum.h">
+      <Filter>Header Files\01_types\01_fundamentalne\01_typy_calkowite\01_typ_wyliczeniowy_enum</Filter>
+    </ClInclude>
+    <ClInclude Include="02_calculate.h">
+      <Filter>Header Files\01_types\01_fundamentalne\01_typy_calkowite\01_typ_wyliczeniowy_enum</Filter>
+    </ClInclude>
+    <ClInclude Include="03_enum_days.h">
+      <Filter>Header Files\01_types\01_fundamentalne\01_typy_calkowite\01_typ_wyliczeniowy_enum</Filter>
+    </ClInclude>
+    <ClInclude Include="04_enum_true_calculate.h">
+      <Filter>Header Files\01_types\01_fundamentalne\01_typy_calkowite\01_typ_wyliczeniowy_enum</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

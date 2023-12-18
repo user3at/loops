@@ -128,6 +128,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="01_bool.cpp" />
+    <ClCompile Include="01_char.cpp" />
+    <ClCompile Include="01_enum.cpp" />
+    <ClCompile Include="02_bool_check.cpp" />
+    <ClCompile Include="02_calculate.cpp" />
+    <ClCompile Include="02_double.cpp" />
+    <ClCompile Include="03_enum_days.cpp" />
+    <ClCompile Include="03_george_bool.cpp" />
+    <ClCompile Include="03_long_double.cpp" />
+    <ClCompile Include="04_enum_true_calculate.cpp" />
+    <ClCompile Include="data_type.cpp" />
+    <ClCompile Include="01_float.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="01_int.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="01_bool.h" />
+    <ClInclude Include="01_char.h" />
+    <ClInclude Include="01_enum.h" />
+    <ClInclude Include="02_bool_check.h" />
+    <ClInclude Include="02_calculate.h" />
+    <ClInclude Include="02_double.h" />
+    <ClInclude Include="03_enum_days.h" />
+    <ClInclude Include="03_george_bool.h" />
+    <ClInclude Include="03_long_double.h" />
+    <ClInclude Include="04_enum_true_calculate.h" />
+    <ClInclude Include="data_type.h" />
+    <ClInclude Include="01_float.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="01_int.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
