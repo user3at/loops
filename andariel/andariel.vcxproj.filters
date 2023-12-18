@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\01_types">
+      <UniqueIdentifier>{c100cb56-8854-42d6-b0ff-a6d1c388ff98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\02_control_structures">
+      <UniqueIdentifier>{afe7734b-ce5e-4a6b-9b09-f9b6a79f3bdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\02_control_structures\01_conditional_statements">
+      <UniqueIdentifier>{8108c43c-cc6b-42a6-8651-c370eca77898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\02_control_structures\02_loops">
+      <UniqueIdentifier>{443bf600-e9df-4c65-bf3c-9aec5dc09ff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\01_types\01_fundamentalne">
+      <UniqueIdentifier>{835b02e7-7ba6-4dcd-a80b-057e8a8ce84f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\01_types\02_zlozone">
+      <UniqueIdentifier>{2a3123c7-2c0e-4d6f-868b-ece7d6aced70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\01_types\01_fundamentalne\03_znaki_alfanumeryczne">
+      <UniqueIdentifier>{3d293ac3-3934-4263-b63d-d2ec5f6bc322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\01_types\01_fundamentalne\01_typy_calkowite">
+      <UniqueIdentifier>{4621668c-2e1e-4b27-9955-3958ef3ef580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\01_types\01_fundamentalne\02_typy_zmiennoprzecinkowe">
+      <UniqueIdentifier>{b47e96de-1bf8-4ef4-9d48-231a4c9eb6eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\01_types\01_fundamentalne\04_typ_logiczny">
+      <UniqueIdentifier>{fcb26d36-7cda-4a84-bedd-2ab0f1eb0a75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_types">
+      <UniqueIdentifier>{96463d7f-70b0-465e-b7f0-f099f9af3251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_types\01_fundamentalne">
+      <UniqueIdentifier>{84a1f1c8-e5a3-43a9-970e-e9a84060a319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_types\01_fundamentalne\04_typ_logiczny">
+      <UniqueIdentifier>{96fa6fa0-0f27-4e8f-9f98-5a0c501ec167}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_types\01_fundamentalne\01_typy_calkowite">
+      <UniqueIdentifier>{ed7eb133-daae-4460-b4ce-95e86d099038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_types\01_fundamentalne\02_typy_zmiennoprzecinkowe">
+      <UniqueIdentifier>{566f27ac-9c1c-439c-86c7-d489481af11d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_types\01_fundamentalne\03_znaki_alfanumeryczne">
+      <UniqueIdentifier>{0bbfae6c-1bfa-4c60-814d-1fab9cb314ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_types\02_zlozone">
+      <UniqueIdentifier>{c00b937b-6ff2-4c25-a024-3e4b51455e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02_control_structures">
+      <UniqueIdentifier>{745459be-9443-480a-89cc-5956e70aba92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02_control_structures\01_conditional_statements">
+      <UniqueIdentifier>{bb6f099f-0e66-411d-a2b1-45494c5894a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02_control_structures\02_loops">
+      <UniqueIdentifier>{9adc44f7-7b52-42b3-91be-4d7da399bcba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\02_control_structures\01_conditional_statements\01_if">
+      <UniqueIdentifier>{c5871d94-ec77-4f56-8178-1520054baba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\02_control_structures\01_conditional_statements\02_switch">
+      <UniqueIdentifier>{6b10d9ca-7a3f-4e53-99ee-b78cf56c73c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\02_control_structures\02_loops\01_for">
+      <UniqueIdentifier>{4bb698c7-85fe-4f31-9206-7d0fa4f07278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\02_control_structures\02_loops\02_foreach">
+      <UniqueIdentifier>{7beab4cc-7de7-4ff7-b2be-8ab8408d5113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\02_control_structures\02_loops\03_while">
+      <UniqueIdentifier>{3830a966-39d7-427b-8bfb-1f206e192e6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\02_control_structures\02_loops\04_do_while">
+      <UniqueIdentifier>{23f10e57-33a4-402a-a3fe-cde0393a54fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02_control_structures\01_conditional_statements\01_if">
+      <UniqueIdentifier>{b14e8f4a-dc92-4b6b-822d-60a98e62c3c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02_control_structures\01_conditional_statements\02_switch">
+      <UniqueIdentifier>{6461cd5f-f306-4d0a-9f23-618601666447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02_control_structures\02_loops\01_for">
+      <UniqueIdentifier>{a0f92b0e-fbe1-4f65-b678-04ae3567ce27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02_control_structures\02_loops\02_foreach">
+      <UniqueIdentifier>{858ef675-1c86-473a-8185-700c429b0f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02_control_structures\02_loops\03_while">
+      <UniqueIdentifier>{4dfc66b1-e3df-4c67-a4f7-864bca0e77b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02_control_structures\02_loops\04_do_while">
+      <UniqueIdentifier>{34c575c3-f82b-4fda-93f2-507a3c88e2c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\00_global">
+      <UniqueIdentifier>{72605606-d58d-4d2a-9dff-045370d7e4b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\00_global">
+      <UniqueIdentifier>{73fc1f98-486a-4256-8c5e-d651b00d4ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\01_types\01_fundamentalne\01_typy_calkowite\01_typ_wyliczeniowy_enum">
+      <UniqueIdentifier>{cc66f9fc-346b-483f-a6b6-8cb52e3233d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_types\01_fundamentalne\01_typy_calkowite\01_typ_wyliczeniowy_enum">
+      <UniqueIdentifier>{5ae62c11-7b3d-4b13-aaf5-aa18b905ba90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\01_types\00_deklaracja_definicja">
+      <UniqueIdentifier>{46374ef8-7dfe-4c77-8aab-10d375b92b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\01_types\00_deklaracja_definicja">
+      <UniqueIdentifier>{3ddd5c71-08af-40aa-ad4d-795a7b880a15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
