@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
-#include "enum.h"
+#include "01_enum.h"
+#include "04_enum_true_calculate.h"
+
 namespace fun3at
 {
 	enum class operacje_wyboru : int
