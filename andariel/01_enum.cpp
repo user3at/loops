@@ -12,23 +12,23 @@ namespace fun3at
 		std::cin >> choice;
 		system_clear(choice);
 
-		definiowanie_typu();
+		definiowanie_typu_enum();
 		czy_wyswietlic(1);
 		system_clear(choice);
 
-		definiowanie_zmiennej();
+		definiowanie_zmiennej_enum();
 		czy_wyswietlic(2);
 		system_clear(choice);
 
-		lista_wyliczeniowa();
-		porownianie_elementow();
-		typ_podwaliny_i_alias();
-		wartosci_liczowe_i_stale_calkowite();
+		lista_wyliczeniowa_enum();
+		porownianie_elementow_enum();
+		typ_podwaliny_i_alias_enum();
+		wartosci_liczowe_i_stale_calkowite_enum();
 		czy_wyswietlic(4);
 		system_clear(choice);
 	}
 
-	void definiowanie_typu()
+	void definiowanie_typu_enum()
 	{
 		std::cout <<
 			R"(
@@ -51,7 +51,7 @@ I. DEFINIOWANIE TYPU WYLICZENIOWEGO ENUM.
 )";
 
 	}
-	void definiowanie_zmiennej()
+	void definiowanie_zmiennej_enum()
 	{
 		std::cout <<
 			R"( 
@@ -68,7 +68,7 @@ I. DEFINIOWANIE TYPU WYLICZENIOWEGO ENUM.
 )";
 
 	}
-	void przyklad()
+	void przyklad_enum()
 	{
 		std::cout <<
 			R"(
@@ -90,7 +90,7 @@ II. PRZYKLAD.
 )";
 
 	}
-	void lista_wyliczeniowa()
+	void lista_wyliczeniowa_enum()
 	{
 		std::cout <<
 			R"(
@@ -110,7 +110,7 @@ III. LISTA WYLICZENIOWA
 )";
 
 	}
-	void porownianie_elementow()
+	void porownianie_elementow_enum()
 	{
 		std::cout <<
 			R"(
@@ -120,7 +120,7 @@ IV. POROWNYWANIE ELEMENOW Z LISTY
 )";
 
 	}
-	void typ_podwaliny_i_alias()
+	void typ_podwaliny_i_alias_enum()
 	{
 		std::cout <<
 			R"(
@@ -133,7 +133,7 @@ V. TYP PODWALINY
 )";
 
 	}
-	void wartosci_liczowe_i_stale_calkowite()
+	void wartosci_liczowe_i_stale_calkowite_enum()
 	{
 		std::cout <<
 			R"( 

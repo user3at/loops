@@ -19,4 +19,10 @@
 namespace fun3at
 {
 	void data_type();
+	void deklaracja_i_definicja_typow();
+	void specyfikator_typow();
+	void pierwszy_podzial_typow();
+	void drugi_podzial_typow();
+
+	void czy_wyswietlic(const int& control);
 }
