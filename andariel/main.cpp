@@ -3,5 +3,9 @@
 
 int main()
 {
-	ft::main_menu();
+	int control_back{ 1 };
+	do
+	{
+		ft::main_menu(control_back);
+	} while (control_back != 0);
 }

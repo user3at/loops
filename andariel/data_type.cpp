@@ -4,7 +4,8 @@
 
 namespace fun3at
 {
-	void data_type() // DEFINICJA funkcji (patrz data_types.h)
+	int data_type(int& control_back) // DEFINICJA funkcji (patrz data_types.h)
+	//void data_type() // DEFINICJA funkcji (patrz data_types.h)
 	{
 		std::cout << "czyscic ekran? y/n \n";
 		char choice;
@@ -29,6 +30,8 @@ namespace fun3at
 		system_clear(choice);
 
 		fun3at::menu_type();
+
+		return control_back;
 	}
 
 	void deklaracja_i_definicja_typow()
