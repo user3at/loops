@@ -8,27 +8,30 @@ namespace fun3at
 	void enum_t()
 	{
 		std::cout << "czyscic ekran? y/n \n";
-		char choice;
-		std::cin >> choice;
-		system_clear(choice);
+			char choice;
+			std::cin >> choice;
+			system_clear(choice);
 
-		definiowanie_typu_enum();
-		czy_wyswietlic(1);
-		system_clear(choice);
+		definition_type_enum();
+			whether_display(1);
+			system_clear(choice);
 
-		definiowanie_zmiennej_enum();
-		czy_wyswietlic(2);
-		system_clear(choice);
+		definition_var_enum();
+			whether_display(2);
+			system_clear(choice);
 
-		lista_wyliczeniowa_enum();
-		porownianie_elementow_enum();
+		enumerated_list();
+
+		comparing_enumerated_elements();
+
 		typ_podwaliny_i_alias_enum();
-		wartosci_liczowe_i_stale_calkowite_enum();
-		czy_wyswietlic(4);
-		system_clear(choice);
+
+		numerical_value_and_const_entire();
+			whether_display(4);
+			system_clear(choice);
 	}
 
-	void definiowanie_typu_enum()
+	void definition_type_enum()
 	{
 		std::cout <<
 			R"(
@@ -51,7 +54,7 @@ I. DEFINIOWANIE TYPU WYLICZENIOWEGO ENUM.
 )";
 
 	}
-	void definiowanie_zmiennej_enum()
+	void definition_var_enum()
 	{
 		std::cout <<
 			R"( 
@@ -68,7 +71,7 @@ I. DEFINIOWANIE TYPU WYLICZENIOWEGO ENUM.
 )";
 
 	}
-	void przyklad_enum()
+	void example()
 	{
 		std::cout <<
 			R"(
@@ -90,7 +93,7 @@ II. PRZYKLAD.
 )";
 
 	}
-	void lista_wyliczeniowa_enum()
+	void enumerated_list()
 	{
 		std::cout <<
 			R"(
@@ -110,7 +113,7 @@ III. LISTA WYLICZENIOWA
 )";
 
 	}
-	void porownianie_elementow_enum()
+	void comparing_enumerated_elements()
 	{
 		std::cout <<
 			R"(
@@ -133,7 +136,7 @@ V. TYP PODWALINY
 )";
 
 	}
-	void wartosci_liczowe_i_stale_calkowite_enum()
+	void numerical_value_and_const_entire()
 	{
 		std::cout <<
 			R"( 
@@ -155,7 +158,7 @@ VII. DEFINIOWANIE STALYCH CALKOWITYCH Z ENUM
 
 	}
 	
-	void enum_tworzenie_listy()
+	void enum_creating_list()
 	{
 
 		/* definiuje typ z domyslna podwalina typu : int */
@@ -182,7 +185,7 @@ VII. DEFINIOWANIE STALYCH CALKOWITYCH Z ENUM
 		std::cout << "dzisiaj jest " << x << " dzien miesiaca \n";
 		system("pause");
 	}
-	void enum_wartosc_liczbowa()
+	void enum_numerical_value()
 	{
 		enum struct Tpraca_silnikow
 		{
@@ -271,7 +274,7 @@ VII. DEFINIOWANIE STALYCH CALKOWITYCH Z ENUM
 
 
 	}
-	void enum_staly()
+	void enum_const_entire()
 	{
 		// CZAS NA DEFINICJE STALYCH CALKOWITYCH
 		enum
@@ -286,7 +289,7 @@ VII. DEFINIOWANIE STALYCH CALKOWITYCH Z ENUM
 		system("pause");
 	}
 
-	void czy_wyswietlic(const int& control)
+	void whether_display(const int& control)
 	{
 		std::cout << "czy uruchomic funkcje? y/n :";
 		char x;
@@ -295,12 +298,11 @@ VII. DEFINIOWANIE STALYCH CALKOWITYCH Z ENUM
 		{
 			switch (control)
 			{
-			case 1: enum_tworzenie_listy(); break;
-			case 2: enum_wartosc_liczbowa(); break;
-		 // case 3: enum_alias(); break;
-			case 4: enum_staly(); break;
+				case 1: enum_creating_list(); break;
+				case 2: enum_numerical_value(); break;
+				// case 3: enum_alias(); break;
+				case 4: enum_const_entire(); break;
 			}
 		}
-
 	}
 }
