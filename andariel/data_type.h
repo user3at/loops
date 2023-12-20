@@ -18,7 +18,8 @@
 
 namespace fun3at
 {
-	void data_type();
+	int data_type(int& control_back);
+	//void data_type();
 	void deklaracja_i_definicja_typow();
 	void specyfikator_typow();
 	void pierwszy_podzial_typow();
