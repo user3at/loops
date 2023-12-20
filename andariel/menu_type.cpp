@@ -19,16 +19,30 @@ namespace fun3at
 	};
 	menu_type_t zmienna_menu_type{};
 	
-	void menu_type()
+	int menu_type()
 	{
-		print_menu_type();
-			enter(1);
+		int choice_back{ 1 };
+		do
+		{
+			print_menu_type();
+				enter(1);
+			
+			std::string choice;
+			getline(std::cin, choice);
+			
+			if (choice != "9")
+			{
+				przypisz_operacje_menu_type(choice, zmienna_menu_type);
+				zaladowanie_pozycji_menu(zmienna_menu_type);
+				//ft::clear_iostream();
 
-		std::string choice;
-		getline(std::cin, choice);
+			}
+			else
+				choice_back = 9;
 
-		przypisz_operacje_menu_type(choice, zmienna_menu_type);
-		zaladowanie_pozycji_menu(zmienna_menu_type);
+		} while (choice_back != 9);
+
+		return choice_back;
 	}
 
 	void print_menu_type()
@@ -36,12 +50,13 @@ namespace fun3at
 		std::cout << "typy fundamentalne, wpisz: \n";
 
 			std::cout << "$typ int \n";
-				std::cout << "  $typ wyliczeniowy enum \n";
+			std::cout << "  $typ wyliczeniowy enum \n";
 			std::cout << "$typ float \n";
 			std::cout << "$typ double \n";
 			std::cout << "$typ long double \n";
 			std::cout << "$typ char \n";
 			std::cout << "$typ bool \n";
+			std::cout << "9. back \n";
 
 			//open_file("x01_float.h");
 			
@@ -72,32 +87,54 @@ namespace fun3at
 		switch (zmienna_menu_type)
 		{
 			case menu_type_t::typ_int:
+			{
+				system("clear");
 				int_t();
+			}
 				break;
 
 			case menu_type_t::typ_enum:
+			{
+				system("clear");
 				enum_t();
+			}
 				break;
 			
 			case menu_type_t::typ_float:
+			{
+				system("clear");
 				float_t();
+			}
 				break;
 
 			case menu_type_t::typ_double:
+			{
+				system("clear");
 				double_t();
+			}
 				break;
 
 			case menu_type_t::typ_long_double:
+			{
+				system("clear");
 				long_double_t();
+			}
 				break;
 
 			case menu_type_t::typ_char:
+			{
+				system("clear");
 				char_t();
+			}
 				break;
 
 			case menu_type_t::typ_bool:
+			{
+				system("clear");
 				bool_t();
+			}
 				break;
 		}
+		//system("pause");
 	}
 }
