@@ -20,10 +20,10 @@ namespace fun3at
 {
 	int data_type(int& control_back);
 	//void data_type();
-	void deklaracja_i_definicja_typow();
-	void specyfikator_typow();
-	void pierwszy_podzial_typow();
-	void drugi_podzial_typow();
+	void declaration_and_definition_type();
+	void specifier_type();
+	void first_division_type();
+	void second_division_type();
 
-	void czy_wyswietlic(const int& control);
+	void whether_display(const int& control);
 }

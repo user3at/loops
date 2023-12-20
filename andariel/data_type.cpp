@@ -8,33 +8,33 @@ namespace fun3at
 	//void data_type() // DEFINICJA funkcji (patrz data_types.h)
 	{
 		std::cout << "czyscic ekran? y/n \n";
-		char choice;
-		std::cin >> choice;
-		system_clear(choice);
-		clear_iostream();
+			char choice;
+			std::cin >> choice;
+			system_clear(choice);
+			clear_iostream();
 
-		deklaracja_i_definicja_typow();
-		std::cin.get();
-		system_clear(choice);
+		declaration_and_definition_type();
+			std::cin.get();
+			system_clear(choice);
 
-		specyfikator_typow();
-		std::cin.get();
-		system_clear(choice);
+		specifier_type();
+			std::cin.get();
+			system_clear(choice);
 
-		pierwszy_podzial_typow();
-		std::cin.get();
-		system_clear(choice);
+		first_division_type();
+			std::cin.get();
+			system_clear(choice);
 
-		drugi_podzial_typow();
-		std::cin.get();
-		system_clear(choice);
+		second_division_type();
+			std::cin.get();
+			system_clear(choice);
 
 		fun3at::menu_type();
 
 		return control_back;
 	}
 
-	void deklaracja_i_definicja_typow()
+	void declaration_and_definition_type()
 	{
 		std::cout << 
 R"(
@@ -54,7 +54,7 @@ I. DEKLARACJA TYPU
 		   }
 )";
 	}
-	void specyfikator_typow()
+	void specifier_type()
 	{
 		std::cout <<
 R"(
@@ -72,7 +72,7 @@ II. SPECYFIKATOR TYPOW
 )";
 
 	}
-	void pierwszy_podzial_typow()
+	void first_division_type()
 	{
 		std::cout <<
 			R"(
@@ -112,7 +112,7 @@ II. ZLOZONE
 
 )";
 }
-	void drugi_podzial_typow()
+	void second_division_type()
 	{
 		std::cout <<
 R"(

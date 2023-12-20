@@ -8,14 +8,14 @@ namespace fun3at
 	enum class main_menu_t : int
 	{
 		exit = 0,
-		typy = 1,
-		instrukcje_sterujace
+		type = 1,
+		control_structures
 	};
-	main_menu_t zmienna_menu{};
+	main_menu_t list_element{};
 
 	void print_main_menu()
 	{
-		std::cout << "$ typy danych \n";
+		std::cout << "$ type danych \n";
 		std::cout << "$ instrukcje sterujace \n";
 		std::cout << "0. exit \n";
 	}
@@ -29,10 +29,10 @@ namespace fun3at
 			std::string choice;
 			getline(std::cin, choice);
 
-		if (choice == "typy danych" || choice == "instrukcje sterujace" || choice == "0")
+		if (choice == "type danych" || choice == "instrukcje sterujace" || choice == "0")
 		{
-			przypisz_operacje_main_menu(choice, zmienna_menu);
-			zaladowanie_pozycji_menu(zmienna_menu, control_back);
+			operation_attribute_main_menu(choice, list_element);
+			set_menu_position(list_element, control_back);
 		}
 		else
 		{
@@ -43,27 +43,27 @@ namespace fun3at
 		return control_back;
 	}
 
-	void przypisz_operacje_main_menu(std::string choice, main_menu_t& zmiemnna_menu)
+	void operation_attribute_main_menu(std::string choice, main_menu_t& zmiemnna_menu)
 	{
-		if (choice == "typy danych")
-			zmienna_menu = main_menu_t::typy;
+		if (choice == "type danych")
+			list_element = main_menu_t::type;
 		else if (choice == "instrukcje setrujace")
-			zmienna_menu = main_menu_t::instrukcje_sterujace;
+			list_element = main_menu_t::control_structures;
 
 		else if (choice == "0")
-			zmienna_menu = main_menu_t::exit;
+			list_element = main_menu_t::exit;
 
 	}
 
-	int zaladowanie_pozycji_menu(main_menu_t zmienna_menu, int& control_back)
+	int set_menu_position(main_menu_t list_element, int& control_back)
 	{
-		switch (zmienna_menu)
+		switch (list_element)
 		{
-			case main_menu_t::typy:
+			case main_menu_t::type:
 				ft::data_type(control_back);
 				break;
 
-			case main_menu_t::instrukcje_sterujace:
+			case main_menu_t::control_structures:
 				std::cout << "w budowie \n";
 				break;
 

@@ -7,17 +7,17 @@
 
 namespace fun3at
 {
-	enum class menu_type_t : int
+	enum class menu_of_types_list : int
 	{
-		typ_int = 1,
-		typ_enum,
-		typ_float,
-		typ_double,
-		typ_long_double,
-		typ_char,
-		typ_bool
+		type_int = 1,
+		type_enum,
+		type_float,
+		type_double,
+		type_long_double,
+		type_char,
+		type_bool
 	};
-	menu_type_t zmienna_menu_type{};
+	menu_of_types_list element_menu_type_list{};
 	
 	int menu_type()
 	{
@@ -32,8 +32,8 @@ namespace fun3at
 			
 			if (choice != "9")
 			{
-				przypisz_operacje_menu_type(choice, zmienna_menu_type);
-				zaladowanie_pozycji_menu(zmienna_menu_type);
+				set_operation_menu_type(choice, element_menu_type_list);
+				reloading_position_menu(element_menu_type_list);
 				//ft::clear_iostream();
 
 			}
@@ -64,71 +64,71 @@ namespace fun3at
 
 	}
 
-	void przypisz_operacje_menu_type(std::string choice, menu_type_t& zmienna_menu_type)
+	void set_operation_menu_type(std::string choice, menu_of_types_list& element_menu_type_list)
 	{
 		if (choice == "typ int")
-			zmienna_menu_type = menu_type_t::typ_int;
+			element_menu_type_list = menu_of_types_list::type_int;
 		else if (choice == "typ wyliczeniowy enum")
-			zmienna_menu_type = menu_type_t::typ_enum;
+			element_menu_type_list = menu_of_types_list::type_enum;
 		else if (choice == "typ float")
-			zmienna_menu_type = menu_type_t::typ_float;
+			element_menu_type_list = menu_of_types_list::type_float;
 		else if (choice == "typ double")
-			zmienna_menu_type = menu_type_t::typ_double;
+			element_menu_type_list = menu_of_types_list::type_double;
 		else if (choice == "typ long double")
-			zmienna_menu_type = menu_type_t::typ_long_double;
+			element_menu_type_list = menu_of_types_list::type_long_double;
 		else if (choice == "typ char")
-			zmienna_menu_type = menu_type_t::typ_char;
+			element_menu_type_list = menu_of_types_list::type_char;
 		else if (choice == "typ bool")
-			zmienna_menu_type = menu_type_t::typ_bool;
+			element_menu_type_list = menu_of_types_list::type_bool;
 	}
 
-	void zaladowanie_pozycji_menu(menu_type_t zmienna_menu_type)
+	void reloading_position_menu(menu_of_types_list element_menu_type_list)
 	{
-		switch (zmienna_menu_type)
+		switch (element_menu_type_list)
 		{
-			case menu_type_t::typ_int:
+			case menu_of_types_list::type_int:
 			{
 				system("clear");
 				int_t();
 			}
 				break;
 
-			case menu_type_t::typ_enum:
+			case menu_of_types_list::type_enum:
 			{
 				system("clear");
 				enum_t();
 			}
 				break;
 			
-			case menu_type_t::typ_float:
+			case menu_of_types_list::type_float:
 			{
 				system("clear");
 				float_t();
 			}
 				break;
 
-			case menu_type_t::typ_double:
+			case menu_of_types_list::type_double:
 			{
 				system("clear");
 				double_t();
 			}
 				break;
 
-			case menu_type_t::typ_long_double:
+			case menu_of_types_list::type_long_double:
 			{
 				system("clear");
 				long_double_t();
 			}
 				break;
 
-			case menu_type_t::typ_char:
+			case menu_of_types_list::type_char:
 			{
 				system("clear");
 				char_t();
 			}
 				break;
 
-			case menu_type_t::typ_bool:
+			case menu_of_types_list::type_bool:
 			{
 				system("clear");
 				bool_t();
