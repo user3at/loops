@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
-#include "01_enum.h"
-#include "04_enum_true_calculate.h"
+#include "global.h"
 
 namespace fun3at
 {
@@ -14,15 +13,17 @@ namespace fun3at
 	};
 	operacje_wyboru zmienna_operacji_wyboru{};
 
-	void true_calculate()
+	void true_calculate(char choice_clean)
 	{
-		std::cout << "dodawanie \n";
-		std::cout << "odejmowanie \n";
-		std::cout << "mnozenie \n";
-		std::cout << "dzielenie \n";
+		std::cout << "!! podaj wartosc string !! \n";
+		std::cout << "$ dodawanie \n";
+		std::cout << "$ odejmowanie \n";
+		std::cout << "$ mnozenie \n";
+		std::cout << "$ dzielenie \n";
 
-		std::string choice;
-		getline(std::cin, choice);
+		clear_iostream();
+			std::string choice;
+			getline(std::cin, choice);
 
 		fun_przypisujaca_zmienna_operacji_wyboru(choice, zmienna_operacji_wyboru);
 		fun_wyboru_operacji(zmienna_operacji_wyboru);

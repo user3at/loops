@@ -16,19 +16,20 @@ namespace fun3at
 	};
 	lista_dni ktory_dzien{};
 
-	void enum_days()
+	void enum_days(char choice_clean)
 	{
 		std::cout << "wpisz dzien: \n";
 		std::cout
-			<< "poniedzialek \n" \
-			<< "wtorek \n" \
-			<< "sroda \n" \
-			<< "czwartek \n" \
-			<< "piatek \n" \
-			<< "sobota \n" \
-			<< "niedziela \n"
+			<< "$ poniedzialek \n" \
+			<< "$ wtorek \n" \
+			<< "$ sroda \n" \
+			<< "$ czwartek \n" \
+			<< "$ piatek \n" \
+			<< "$ sobota \n" \
+			<< "$ niedziela \n"
 			;
 
+		clear_iostream();
 		std::string choice;
 		getline(std::cin, choice);
 
@@ -38,6 +39,8 @@ namespace fun3at
 		concatenation("jest ", nr_day, " dniem; \n");
 		//std::cout << ktory_dzien << " jest " << nr_day << " dniem; \n";
 		//printf(" jest " << nr_day << " dniem; \n")
+
+		clear_system(choice_clean);
 	}
 	void przypisanie_elementu_listy_do_ktory_dzien(std::string choice, lista_dni& ktory_dzien)
 	{

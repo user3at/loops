@@ -1,4 +1,6 @@
 #include <iostream>
+#include "global.h"
+
 namespace fun3at
 {
 	void bool_t()
@@ -7,10 +9,13 @@ namespace fun3at
 		bool x{ 1 };
 		bool y{ 0 };
 		
-		std::cout << "x = " << x << "\n";
-		std::cout << "y = " << y << "\n";
+		std::cout << "bool x = " << x << ", czyli true \n";
+		std::cout << "bool y = " << y << ", czyli false \n";
 
 		// bool z{ 2 };
 		// blad o uzyciu wartosci typu int
+
+		preper_file("01_bool.cpp");
+		bool_check();
 	}
 }

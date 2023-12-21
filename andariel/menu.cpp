@@ -15,8 +15,8 @@ namespace fun3at
 
 	void print_main_menu()
 	{
-		std::cout << "$ type danych \n";
-		std::cout << "$ instrukcje sterujace \n";
+		std::cout << "$ type data \n";
+		std::cout << "$ control structures \n";
 		std::cout << "0. exit \n";
 	}
 
@@ -25,11 +25,11 @@ namespace fun3at
 		print_main_menu();
 			ft::enter(1);
 
-		std::cout << "wpisz dokad chcesz sie udac: ";
+		std::cout << "where we go now: ";
 			std::string choice;
 			getline(std::cin, choice);
 
-		if (choice == "type danych" || choice == "instrukcje sterujace" || choice == "0")
+		if (choice == "type data" || choice == "control structures" || choice == "0")
 		{
 			operation_attribute_main_menu(choice, list_element);
 			set_menu_position(list_element, control_back);
@@ -45,9 +45,9 @@ namespace fun3at
 
 	void operation_attribute_main_menu(std::string choice, main_menu_t& zmiemnna_menu)
 	{
-		if (choice == "type danych")
+		if (choice == "type data")
 			list_element = main_menu_t::type;
-		else if (choice == "instrukcje setrujace")
+		else if (choice == "control structures")
 			list_element = main_menu_t::control_structures;
 
 		else if (choice == "0")
