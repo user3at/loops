@@ -2,5 +2,5 @@
 
 namespace fun3at
 {
-	void calculate();
+	void calculate(char choice);
 }

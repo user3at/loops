@@ -1,9 +1,11 @@
 #include <iostream>
+#include "global.h"
 
 namespace fun3at
 {
 	void george_bool()
 	{
+		std::cout << "george_bool() \n";
 		// ten typ pochodzi od matematyka George'a Boola
 		bool can_bay;
 		can_bay = false;
@@ -23,6 +25,8 @@ namespace fun3at
 
 		else if (!can_bay)
 			std::cout << "nie mozesz kupic \n";
+
+		preper_file("03_george_bool.cpp");
 	}
 
 }

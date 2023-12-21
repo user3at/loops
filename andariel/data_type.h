@@ -15,6 +15,7 @@
 #include "01_enum.h"
 #include "02_calculate.h"
 #include "03_enum_days.h"
+#include "04_enum_true_calculate.h"
 
 namespace fun3at
 {
@@ -25,5 +26,5 @@ namespace fun3at
 	void first_division_type();
 	void second_division_type();
 
-	void whether_display(const int& control);
+	void whether_display(const int& control, std::string name_function);
 }

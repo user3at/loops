@@ -7,18 +7,17 @@ namespace fun3at
 {
 	void enum_t()
 	{
-		std::cout << "czyscic ekran? y/n \n";
-			char choice;
-			std::cin >> choice;
-			system_clear(choice);
+		bool choice_clean = clean_screen();
+			clear_system(choice_clean);
 
 		definition_type_enum();
-			whether_display(1);
-			system_clear(choice);
+			preper_file("01_enum.cpp");
+			whether_display(1, "enum_creating_list");
+			clear_system(choice_clean);
 
 		definition_var_enum();
-			whether_display(2);
-			system_clear(choice);
+			whether_display(2, "enum_numerical_value");
+			clear_system(choice_clean);
 
 		enumerated_list();
 
@@ -27,8 +26,25 @@ namespace fun3at
 		typ_podwaliny_i_alias_enum();
 
 		numerical_value_and_const_entire();
-			whether_display(4);
-			system_clear(choice);
+			whether_display(4, "enum_const_entire");
+			clear_system(choice_clean);
+
+			
+			
+
+			enter(2);
+				std::cout << "Nastapi wywolanie dodatkowych funkcji \n";
+			enter(2);
+
+			calculate(choice_clean);
+			preper_file("02_calculate.cpp");
+
+
+			enum_days(choice_clean);
+			preper_file("03_enum_days.cpp");
+
+			true_calculate(choice_clean);
+			preper_file("04_enum_true_calculate.cpp");
 	}
 
 	void definition_type_enum()
@@ -50,7 +66,6 @@ I. DEFINIOWANIE TYPU WYLICZENIOWEGO ENUM.
 	
 	$ enum <nazwa typu enum> {<lista wyliczeniowa>};	
 		
-	==>>> Sprawdz: void enum_tworzenie_listy();
 )";
 
 	}
@@ -64,32 +79,10 @@ I. DEFINIOWANIE TYPU WYLICZENIOWEGO ENUM.
 	$ <nazwa typu enum> zmienna;
 	
 		== do obiektu typu wyliczeniowego nie wolno wstawiac wartosci liczbowej;
-		 == nawet takiej ktora jest na jego liscie wyliczeniowej;	
+		== nawet takiej ktora jest na jego liscie wyliczeniowej;
 		
 		# BLEDNY ZAPIS
 		$ zmienna = 0;
-)";
-
-	}
-	void example()
-	{
-		std::cout <<
-			R"(
-II. PRZYKLAD.
-
-	enum struct Takcja 
-	{
-		start_pomiaru = 0,
-		odczyt_pomiaru = 1,
-		zmiana_probki = 54,
-		zniszczenie_probki = 55
-	};
-	Takcja co_robic; 
-	
-	co_robic::Takcja::zmiana_probki;
-	co_robic::Takcja::zniszczenie_probki;
-	
-	==>>> Sprawdz void enum_wartosc_liczbowa();	
 )";
 
 	}
@@ -110,6 +103,27 @@ III. LISTA WYLICZENIOWA
 		# stary = nowy, 
 			// robi sie tak, gdy chcesz nadac dwie nazwy na te sama akcje
 		# koniec = nowy + stary - 2,
+)";
+
+	}
+	void example()
+	{
+		std::cout <<
+			R"(
+II. PRZYKLAD.
+
+	enum struct Takcja 
+	{
+		start_pomiaru = 0,
+		odczyt_pomiaru = 1,
+		zmiana_probki = 54,
+		zniszczenie_probki = 55
+	};
+	Takcja co_robic; 
+	
+	co_robic::Takcja::zmiana_probki;
+	co_robic::Takcja::zniszczenie_probki;
+
 )";
 
 	}
@@ -152,11 +166,8 @@ VII. DEFINIOWANIE STALYCH CALKOWITYCH Z ENUM
 	
 		2. klasycza instrukcja
 			$ constexpr int stala_liczba = 8;
-
-	==>>> sprwch void enum_staly();
 )";
-
-	}
+}
 	
 	void enum_creating_list()
 	{
@@ -289,15 +300,16 @@ VII. DEFINIOWANIE STALYCH CALKOWITYCH Z ENUM
 		system("pause");
 	}
 
-	void whether_display(const int& control)
+	void whether_display(const int& control, std::string name_function)
 	{
-		std::cout << "czy uruchomic funkcje? y/n :";
+		std::cout << "czy uruchomic funkcje? " <<name_function << " y/n :";
 		char x;
 		std::cin >> x;
 		if (x == 'y')
 		{
 			switch (control)
 			{
+				case 0:; break;
 				case 1: enum_creating_list(); break;
 				case 2: enum_numerical_value(); break;
 				// case 3: enum_alias(); break;

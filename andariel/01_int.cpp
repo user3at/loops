@@ -5,23 +5,23 @@ namespace fun3at
 {
 	void int_t()
 	{
-		std::cout << "sprawdz kod \n";
+		std::cout << "int_t() \n";
 
 		short int short_int_t{ 16 };
 		int int_t{ 32 };
 		long int long_int{ 64 };
 		long long int long_long_int{ 64 };
 
-		std::cout << "short_int_t ma " << short_int_t << " bitow \n";
-		std::cout << "int_t ma " << int_t << " bitow \n";
-		std::cout << "long_int ma " << long_int << " bitow \n";
-		std::cout << "long_long_int ma " << long_long_int << " bitow \n";
+		std::cout << "short_int_t has " << short_int_t << " bites \n";
+		std::cout << "int_t has " << int_t << " bites \n";
+		std::cout << "long_int has " << long_int << " bites\n";
+		std::cout << "long_long_int has " << long_long_int << " bites \n";
 
 		/* przypisanie wartosci */
 		short x = 34;
-		std::cout << "x jest rowny " << x << "\n";
+		std::cout << "x is equal " << x << "\n";
 
-		enter(2);
+		//enter(2);
 		/* inicjalizacja wartosci */
 		// short x{ 43.45 };
 		// inicjalizacja zapobiega bleda;
@@ -33,5 +33,8 @@ namespace fun3at
 
 		/* bezpieczniej */
 		// uzywac inicjalizacji wartosci podczas definiowania;
+
+
+		preper_file("01_int.cpp");
 	}
 }
