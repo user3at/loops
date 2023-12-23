@@ -5,6 +5,7 @@ namespace fun3at
 {
 	void int_t()
 	{
+		
 		std::cout << "int_t() \n";
 
 		short int short_int_t{ 16 };
@@ -33,7 +34,6 @@ namespace fun3at
 
 		/* bezpieczniej */
 		// uzywac inicjalizacji wartosci podczas definiowania;
-
 
 		preper_file("01_int.cpp");
 	}

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "global.h"
+#include "02_bool_check.h"
 
 namespace fun3at
 {
@@ -16,6 +17,6 @@ namespace fun3at
 		// blad o uzyciu wartosci typu int
 
 		preper_file("01_bool.cpp");
-		bool_check();
+		ft::clear_iostream();
 	}
 }

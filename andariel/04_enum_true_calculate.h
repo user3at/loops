@@ -3,7 +3,7 @@
 
 namespace fun3at
 {
-	void true_calculate(char choice_clean);
+	void true_calculate(const bool& choice_clean);
 	enum class operacje_wyboru : int;
 	void fun_przypisujaca_zmienna_operacji_wyboru(std::string choice, operacje_wyboru& zmienna_operacji_wyboru);
 	void fun_wyboru_operacji(operacje_wyboru zmienna_operacji_wyboru);

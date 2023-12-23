@@ -36,9 +36,9 @@ namespace fun3at
 		else
 			return 0;
 	}
-	void clear_system(const bool& choice_clear)
+	void clear_system(const bool& choice_clean)
 	{
-		if (choice_clear)
+		if (choice_clean)
 			system("clear");
 	}
 	void clear_iostream()
@@ -67,7 +67,7 @@ namespace fun3at
 		{
 			std::cout << "wprowadz poprawna wartosc \n";
 		}
-
+		ft::clear_iostream();
 	}
 		void open_file(std::string name_of_file)
 		{

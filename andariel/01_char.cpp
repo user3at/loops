@@ -36,5 +36,6 @@ namespace fun3at
 		// std::cout << t32 << "\n";
 	
 		preper_file("01_char.cpp");
+		ft::clear_iostream();
 	}
 }

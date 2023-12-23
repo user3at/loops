@@ -1,8 +1,6 @@
 #pragma once
 #include <iostream>
 
-#include "data_type.h"
-
 namespace fun3at
 {
 	void concatenation(std::string a, int b, std::string c);
@@ -11,7 +9,7 @@ namespace fun3at
 	void press_enter();
 	
 	bool clean_screen();
-	void clear_system(const bool& choice_clear);
+	void clear_system(const bool& choice_clean);
 	void clear_iostream();
 
 

@@ -1,11 +1,10 @@
-#include "global.h"
 #include "menu.h"
 
 int main()
 {
-	int control_back{ 1 };
+	bool control_back{ 1 };
 	do
 	{
-		ft::main_menu(control_back);
+		fun3at::menu_main();
 	} while (control_back != 0);
 }

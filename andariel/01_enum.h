@@ -2,7 +2,7 @@
 
 namespace fun3at
 {
-	void enum_t();
+	void enum_t(const bool& choice_clean);
 	//void czy_wyswietlic(const int& control);
 	void definition_type_enum();
 	void definition_var_enum();
@@ -14,7 +14,8 @@ namespace fun3at
 
 	void enum_creating_list();
 	void enum_numerical_value();
-	void enum_alias();
+	//void enum_alias();
 	void enum_const_entire();
 
+	void whether_display(const int& control, std::string name_function);
 }

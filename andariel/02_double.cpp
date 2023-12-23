@@ -11,5 +11,6 @@ namespace fun3at
 		std::cout << "double: " << y << "\n";
 
 	preper_file("02_double.cpp");
+	ft::clear_iostream();
 	}
 }

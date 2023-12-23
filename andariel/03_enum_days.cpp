@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "global.h"
+#include "03_enum_days.h"
 
 namespace fun3at
 {
@@ -16,8 +17,10 @@ namespace fun3at
 	};
 	lista_dni ktory_dzien{};
 
-	void enum_days(char choice_clean)
+	void enum_days(const bool& choice_clean)
 	{
+		clear_system(choice_clean);
+
 		std::cout << "wpisz dzien: \n";
 		std::cout
 			<< "$ poniedzialek \n" \
@@ -40,7 +43,6 @@ namespace fun3at
 		//std::cout << ktory_dzien << " jest " << nr_day << " dniem; \n";
 		//printf(" jest " << nr_day << " dniem; \n")
 
-		clear_system(choice_clean);
 	}
 	void przypisanie_elementu_listy_do_ktory_dzien(std::string choice, lista_dni& ktory_dzien)
 	{

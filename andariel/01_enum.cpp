@@ -1,50 +1,44 @@
 #include <iostream>
-#include "01_enum.h"
-
 #include "global.h"
+
+#include "01_enum.h"
 
 namespace fun3at
 {
-	void enum_t()
+	void enum_t(const bool& choice_clean)
 	{
-		bool choice_clean = clean_screen();
-			clear_system(choice_clean);
-
+		clear_system(choice_clean);
 		definition_type_enum();
-			preper_file("01_enum.cpp");
 			whether_display(1, "enum_creating_list");
-			clear_system(choice_clean);
+			press_enter();
 
+		clear_system(choice_clean);
 		definition_var_enum();
 			whether_display(2, "enum_numerical_value");
-			clear_system(choice_clean);
+			press_enter();
+			
+		clear_system(choice_clean);
+		example();
+			press_enter();
 
+		clear_system(choice_clean);
 		enumerated_list();
+			press_enter();
 
+		clear_system(choice_clean);
 		comparing_enumerated_elements();
+			press_enter();
 
+		clear_system(choice_clean);
 		typ_podwaliny_i_alias_enum();
+			press_enter();
 
+		clear_system(choice_clean);
 		numerical_value_and_const_entire();
 			whether_display(4, "enum_const_entire");
-			clear_system(choice_clean);
-
-			
-			
-
-			enter(2);
-				std::cout << "Nastapi wywolanie dodatkowych funkcji \n";
-			enter(2);
-
-			calculate(choice_clean);
-			preper_file("02_calculate.cpp");
-
-
-			enum_days(choice_clean);
-			preper_file("03_enum_days.cpp");
-
-			true_calculate(choice_clean);
-			preper_file("04_enum_true_calculate.cpp");
+			press_enter();
+		
+		preper_file("01_enum.cpp");
 	}
 
 	void definition_type_enum()
@@ -52,7 +46,8 @@ namespace fun3at
 		std::cout <<
 			R"(
 I. DEFINIOWANIE TYPU WYLICZENIOWEGO ENUM.
-1. Definiuje typ enum:
+-------
+-- 1. Definiuje typ enum:
 	
 	$ enum struct <nazwa typu enum> {<lista wyliczeniowa>};
 		// tz. zwykly enum (ze wzgledu na struct);
@@ -65,7 +60,6 @@ I. DEFINIOWANIE TYPU WYLICZENIOWEGO ENUM.
 	or 
 	
 	$ enum <nazwa typu enum> {<lista wyliczeniowa>};	
-		
 )";
 
 	}
@@ -73,7 +67,8 @@ I. DEFINIOWANIE TYPU WYLICZENIOWEGO ENUM.
 	{
 		std::cout <<
 			R"( 
-2. Definowanie zmienna tego typu:
+-------
+-- 2. Definowanie zmienna tego typu:
 	>> przypisuje sie do tej zmiennej wartosci z <listy wyliczeniowej>;
 
 	$ <nazwa typu enum> zmienna;
@@ -83,26 +78,6 @@ I. DEFINIOWANIE TYPU WYLICZENIOWEGO ENUM.
 		
 		# BLEDNY ZAPIS
 		$ zmienna = 0;
-)";
-
-	}
-	void enumerated_list()
-	{
-		std::cout <<
-			R"(
-III. LISTA WYLICZENIOWA 
-	>> przy poszczegolnych nazwach listy wyliczeniowej moga, ale nie musza stac wartosci liczbowe;
-
-
-	>> kompilator zacznie od '0' i bedzie inkrementowal wartosci;
-		# start_pomiaru,
-		# odczyt_pomiaru, // zdobedzie wartosc 1;
-
-	>> 2 elementy listy moga miec te sama wartosc;
-		# nowy = 3,
-		# stary = nowy, 
-			// robi sie tak, gdy chcesz nadac dwie nazwy na te sama akcje
-		# koniec = nowy + stary - 2,
 )";
 
 	}
@@ -124,6 +99,26 @@ II. PRZYKLAD.
 	co_robic::Takcja::zmiana_probki;
 	co_robic::Takcja::zniszczenie_probki;
 
+)";
+
+	}
+	void enumerated_list()
+	{
+		std::cout <<
+			R"(
+III. LISTA WYLICZENIOWA 
+	>> przy poszczegolnych nazwach listy wyliczeniowej moga, ale nie musza stac wartosci liczbowe;
+
+
+	>> kompilator zacznie od '0' i bedzie inkrementowal wartosci;
+		# start_pomiaru,
+		# odczyt_pomiaru, // zdobedzie wartosc 1;
+
+	>> 2 elementy listy moga miec te sama wartosc;
+		# nowy = 3,
+		# stary = nowy, 
+			// robi sie tak, gdy chcesz nadac dwie nazwy na te sama akcje
+		# koniec = nowy + stary - 2,
 )";
 
 	}
@@ -168,7 +163,7 @@ VII. DEFINIOWANIE STALYCH CALKOWITYCH Z ENUM
 			$ constexpr int stala_liczba = 8;
 )";
 }
-	
+
 	void enum_creating_list()
 	{
 
@@ -194,7 +189,6 @@ VII. DEFINIOWANIE STALYCH CALKOWITYCH Z ENUM
 		/* CZAS DOSTAC SIE DO WARTOSCI LICZBOWEJ */
 		int x = static_cast<int>(ktory_dzien);
 		std::cout << "dzisiaj jest " << x << " dzien miesiaca \n";
-		system("pause");
 	}
 	void enum_numerical_value()
 	{
@@ -271,10 +265,9 @@ VII. DEFINIOWANIE STALYCH CALKOWITYCH Z ENUM
 		// CZAS DOSTAC SIE DO WARTOSCI LICZBOWEJ
 		int moc_silnikow = static_cast<int>(telegraf);
 		std::cout << "co oznacza " << moc_silnikow << "% mocy silnikow \n";
-
-		system("pause");
 	}
-	void enum_alias()
+	/*
+		void enum_alias()
 	{
 		enum class long_name_for_enum
 		{
@@ -285,6 +278,7 @@ VII. DEFINIOWANIE STALYCH CALKOWITYCH Z ENUM
 
 
 	}
+	*/
 	void enum_const_entire()
 	{
 		// CZAS NA DEFINICJE STALYCH CALKOWITYCH
@@ -297,19 +291,18 @@ VII. DEFINIOWANIE STALYCH CALKOWITYCH Z ENUM
 		{
 			std::cout << "opuszczamy kotwice nr " << k + 1 << "(z " << liczba_kotwic << ") \n";
 		}
-		system("pause");
 	}
 
 	void whether_display(const int& control, std::string name_function)
 	{
 		std::cout << "czy uruchomic funkcje? " <<name_function << " y/n :";
-		char x;
-		std::cin >> x;
+			char x;
+			std::cin >> x;
+			clear_iostream();
 		if (x == 'y')
 		{
 			switch (control)
 			{
-				case 0:; break;
 				case 1: enum_creating_list(); break;
 				case 2: enum_numerical_value(); break;
 				// case 3: enum_alias(); break;

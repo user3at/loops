@@ -3,7 +3,7 @@
 
 namespace fun3at
 {
-	void calculate(char choice_clear)
+	void calculate(const bool& choice_clean)
 	{
 	
 		enum operacje_wyboru : int
@@ -11,15 +11,14 @@ namespace fun3at
 			dodawanie = 1,
 			odejmowanie = 2,
 			mnozenie,
-			dzielenie,
-			back
+			dzielenie
 		};
 		operacje_wyboru dzialanie_operacyjne{};
 		
-		bool continue_v{ 1 };
+		bool control_back{ false };
 		do
 		{
-			clear_system(choice_clear);
+			clear_system(choice_clean);
 			std::cout << "!! podaj wartosc int !! \n";
 			std::cout << "1. dodawanie \n";
 			std::cout << "2. odejmowanie \n";
@@ -32,28 +31,29 @@ namespace fun3at
 				int choice;
 				std::cin >> choice;
 
-			switch (choice)
-			{
-			case dodawanie:
-				std::cout << "dodawanie \n";
-				break;
-			case odejmowanie:
-				std::cout << "odejmowanie \n";
-				break;
-			case mnozenie:
-				std::cout << "mnozenie \n";
-				break;
-			case dzielenie:
-				std::cout << "dzielenie \n";
-				break;
-			case back:
-				continue_v = 0;
-				break;
-			clear_iostream();
-			}
-		} while (continue_v);
+				if (choice != 5)
+				{
 
-		std::cin.get();
-		clear_system(choice_clear);
+					switch (choice)
+					{
+					case dodawanie:
+						std::cout << "dodawanie \n";
+						break;
+					case odejmowanie:
+						std::cout << "odejmowanie \n";
+						break;
+					case mnozenie:
+						std::cout << "mnozenie \n";
+						break;
+					case dzielenie:
+						std::cout << "dzielenie \n";
+						break;
+					}
+				}
+				else if (choice == 5)
+					control_back = true;
+				else
+					std::cout << "podaj poprawna wartosc \n";
+		} while (!control_back);
 	}
 }

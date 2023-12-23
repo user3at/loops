@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "global.h"
+#include "04_enum_true_calculate.h"
 
 namespace fun3at
 {
@@ -13,7 +14,7 @@ namespace fun3at
 	};
 	operacje_wyboru zmienna_operacji_wyboru{};
 
-	void true_calculate(char choice_clean)
+	void true_calculate(const bool& choice_clean)
 	{
 		std::cout << "!! podaj wartosc string !! \n";
 		std::cout << "$ dodawanie \n";

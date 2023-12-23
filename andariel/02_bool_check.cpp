@@ -1,6 +1,7 @@
 #include <iostream>
-#include "02_bool_check.h"
 #include "global.h"
+#include "02_bool_check.h"
+#include "03_george_bool.h"
 
 namespace fun3at
 {
@@ -28,7 +29,7 @@ namespace fun3at
 		}
 
 		preper_file("02_bool_check.cpp");
-		george_bool();
+		ft::clear_iostream();
 	}
 
 	void bool_check_value(bool x)

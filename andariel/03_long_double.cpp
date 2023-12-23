@@ -11,5 +11,6 @@ namespace fun3at
 		std::cout << "logn double: " << z << "\n";
 
 		preper_file("03_long_double.cpp");
+		ft::clear_iostream();
 	}
 }

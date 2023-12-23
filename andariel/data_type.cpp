@@ -1,37 +1,36 @@
 #include <iostream>
-#include "menu_type.h"
 #include "global.h"
+#include "data_type.h"
+#include "menu_type.h"
 
 namespace fun3at
 {
-	int data_type(int& control_back) 
+	void data_type() 
 	// DEFINICJA funkcji (patrz data_types.h)
 	//void data_type() // DEFINICJA funkcji (patrz data_types.h)
 	{
-		bool choice_clear = clean_screen();
-			clear_system(choice_clear);
+		bool choice_clean = clean_screen();
+			clear_system(choice_clean);
 			clear_iostream();
 
 		declaration_and_definition_type();
-			
 			press_enter();
-			clear_system(choice_clear);
+			clear_system(choice_clean);
 
 		specifier_type();
 			press_enter();
-			clear_system(choice_clear);
+			clear_system(choice_clean);
 
 		first_division_type();
 			press_enter();
-			clear_system(choice_clear);
+			clear_system(choice_clean);
 
 		second_division_type();
 			press_enter();
-			clear_system(choice_clear);
+			clear_system(choice_clean);
 
-		fun3at::menu_type(choice_clear);
+		fun3at::menu_type(choice_clean);
 
-		return control_back;
 	}
 
 	void declaration_and_definition_type()
@@ -137,3 +136,4 @@ R"(
 )";
 	}
 }
+namespace ft = fun3at;
